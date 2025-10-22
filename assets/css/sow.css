@@ -1,9 +1,9 @@
 body {
-  background-color: #e8fbcf;
+  background-color: #ffffff;
 }
 
 section {
-  height: 90vh;
+  height: 200vh;
 }
 
 header {
@@ -33,7 +33,7 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #222;
+  background: #222222;
   color: #ffffff;
 }
 .title {
