@@ -15,131 +15,90 @@
   </head>
   <body>
     <header>
-      <h1>Some Outstanding Webs</h1>
-      <nav>
+      <nav class="navbar">
         <!-- Menú de navegación fijo -->
-        <ul>
-          <li>
-            <a href="#site-awwwards">Awwwards</a>
-          </li>
-          <li>
-            <a href="#site-webby">Webby Awards</a>
-          </li>
-          <li>
-            <a href="#site-fwa">fwa</a>
-          </li>
-          <li>
-            <a href="#site-cssda">cssda</a>
-          </li>
+
+        <div class="logo">TuLogo</div>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <ul class="nav-links">
+          <li><a href="#site-awwwards">Awwwards</a></li>
+          <li><a href="#site-webby">Weby Awards</a></li>
+          <li><a href="#site-fwa">fwa</a></li>
+          <li><a href="#site-cssda">cssda</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="cover">
-        <h1 class="title">Some Outstanding Webs</h1>
+      <section class="intro">
+        <div class="intro-bg"></div>
+        <div class="intro-content">
+          <h1 class="intro-title"><span> Some Outstanding Webs</span></h1>
+          <p class="intro-subtitle">Creative, bold & beautifully crafted</p>
+        </div>
       </section>
       <!-- Secciones individuales para cada sitio -->
       <section id="site-awwwards">
         <h2>Awwwards</h2>
         <iframe
           src="https://www.folllit.com/"
-          title="Sitio Awwwards"
+          title="Folllit"
           width="100%"
           height="400"
           loading="lazy"
         ></iframe>
+        <div class="grid-galeria">
+          <img
+            src="https://ik.imagekit.io/alissonedith/Inicio?updatedAt=1761315067160"
+            alt="captura 1"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2015.38.27.png?updatedAt=1761317089517"
+            alt="captura 2"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2015.39.40.png?updatedAt=1761317068496"
+            alt="captura 3"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2015.39.25.png?updatedAt=1761317032406"
+            alt="captura 4"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2018.49.08.png?updatedAt=1761324929259"
+            alt="captura 5"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2018.48.41.png?updatedAt=1761324846107"
+            alt="captura 6"
+          />
+        </div>
+        <!-- Lightbox (oculto al principio) -->
+        <div id="lightbox" class="lightbox">
+          <span class="cerrar">&times;</span>
+          <img
+            class="lightbox-img"
+            src="https://ik.imagekit.io/alissonedith/Inicio?updatedAt=1761315067160"
+            alt="Imagen ampliada"
+          />
+        </div>
         <div class="analysis-text">
           <p>
             Folllit forma parte de los sitios premiados y nominados en Awwwards,
             una plataforma que reconoce la excelencia en diseño web, UX y
             desarrollo. Es un proyecto de storytelling visual con fuerte
             presencia de animación 3D e interacciones fluidas, características
-            comunes en los sitios de vanguardia digital. Representa bien las
-            tendencias actuales de diseño experimental, donde la frontera entre
-            arte y tecnología se difumina.
+            comunes en los sitios de vanguardia digital. La paleta cromática
+            utiliza fondos oscuros con acentos brillantes y tonos neón,
+            generando contraste y energía visual.
           </p>
           <p>
-            Al ingresar, el sitio genera un impacto inmediato. La experiencia
-            visual es inmersiva, moderna y audaz. Se percibe una intención
-            artística y tecnológica: el usuario no está solo ante una web, sino
-            ante una pieza de diseño interactivo. Las transiciones suaves, los
-            movimientos del cursor y el uso de profundidad espacial evocan un
-            entorno tridimensional. Produce una sensación de curiosidad,
-            dinamismo y sorpresa, típica de los proyectos exhibidos en Awwwards.
-          </p>
-
-          <div class="grid-galeria">
-            <img
-              src="https://ik.imagekit.io/alissonedith/Inicio?updatedAt=1761315067160"
-              alt="captura 1"
-            />
-            <img
-              src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2015.38.27.png?updatedAt=1761317089517"
-              alt="captura 2"
-            />
-            <img
-              src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2015.39.40.png?updatedAt=1761317068496"
-              alt="captura 3"
-            />
-            <img
-              src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2015.39.25.png?updatedAt=1761317032406"
-              alt="captura 4"
-            />
-          </div>
-          <!-- Lightbox (oculto al principio) -->
-          <div id="lightbox" class="lightbox">
-            <span class="cerrar">&times;</span>
-            <img
-              class="lightbox-img"
-              src="https://ik.imagekit.io/alissonedith/Inicio?updatedAt=1761315067160"
-              alt="Imagen ampliada"
-            />
-          </div>
-
-          <p>
-            La arquitectura de información es no convencional, centrada en el
-            scroll como hilo narrativo. No existen menús visibles tradicionales:
-            el usuario descubre el contenido a medida que se desplaza. La
-            información se distribuye en bloques secuenciales que combinan
-            tipografía, animación y video. Se privilegia la exploración libre
-            sobre la navegación jerárquica, una estrategia común en experiencias
-            tipo portfolio experimental o creative lab. Este tipo de
-            arquitectura busca contar una historia visual antes que transmitir
-            datos de forma directa.
-          </p>
-          <p>
-            En términos de usabilidad, el sitio desafía las convenciones. La
-            ausencia de menús claros y la navegación basada en scroll pueden
-            dificultar la orientación inicial. Sin embargo, esta elección
-            responde a un enfoque más artístico que funcional. La experiencia
-            está diseñada para ser exploratoria y sensorial, más que utilitaria.
-            Aunque puede generar cierta confusión al principio, una vez que el
-            usuario se adapta, la navegación se vuelve intuitiva dentro del
-            contexto del storytelling visual.
-          </p>
-          <p>
-            El aspecto visual destaca por su coherencia y control estético. La
-            paleta cromática utiliza fondos oscuros con acentos brillantes y
-            tonos neón, generando contraste y energía visual. La tipografía sans
-            serif de gran peso visual refuerza la modernidad y transmite
-            autoridad creativa. Los tamaños de letra, el espaciado y la
-            animación de texto están cuidadosamente sincronizados con los
+            La tipografía sans serif de gran peso visual refuerza la modernidad
+            y transmite autoridad creativa. Los tamaños de letra, el espaciado y
+            la animación de texto están cuidadosamente sincronizados con los
             efectos de movimiento. El branding se apoya más en la atmósfera y el
             estilo que en un logotipo tradicional: la identidad de Folllit se
             construye desde la experiencia misma del sitio.
-          </p>
-          <p>
-            El sitio se apoya en un fuerte uso de efectos de desplazamiento,
-            microinteracciones y animaciones 3D. Cada desplazamiento activa una
-            respuesta visual: cambios de color, aparición de texto, rotaciones o
-            deformaciones. Estas transiciones se logran probablemente mediante
-            tecnologías como WebGL, Three.js o GSAP, lo que le otorga fluidez y
-            sensación de tridimensionalidad. El scroll es el principal medio de
-            interacción, convirtiéndose en una especie de “narrador invisible”
-            que guía la historia. Los hover states están cuidadosamente
-            diseñados y las animaciones se sienten reactivas, sin retrasos
-            perceptibles.
           </p>
           <p>
             La usabilidad se mueve entre lo experimental y lo funcional. Para un
@@ -153,15 +112,11 @@
             bar, menú lateral, etc.).
           </p>
           <p>
-            La claridad de navegación está subordinada al impacto visual. Aunque
-            la experiencia es estimulante, puede no ser inmediatamente intuitiva
-            para todos los usuarios. No hay un menú fijo ni puntos de anclaje
-            evidentes, por lo que el usuario debe desplazarse manualmente hasta
-            el final. Aun así, el flujo es lógico y la interfaz responde con
-            suavidad. En cuanto a accesibilidad, el contraste es aceptable, pero
-            faltan indicadores de navegación asistida o textos alternativos
-            visibles. Es una web más pensada para la demostración estética que
-            para la accesibilidad universal.
+            No hay un menú fijo ni puntos de anclaje evidentes, por lo que el
+            usuario debe desplazarse manualmente hasta el final. Aun así, el
+            flujo es lógico y la interfaz responde con suavidad. En cuanto a
+            accesibilidad, el contraste es aceptable, pero faltan indicadores de
+            navegación asistida o textos alternativos visibles.
           </p>
           <p>
             Desde el punto de vista técnico, Folllit probablemente utiliza un
@@ -176,6 +131,7 @@
             Lighthouse confirmaría que la prioridad está en la experiencia
             visual más que en la eficiencia bruta.
           </p>
+
           <p>
             El sitio destaca principalmente en los ejes de Diseño, UX y
             Creatividad, los pilares evaluados por Awwwards. El nivel de detalle
@@ -185,46 +141,21 @@
             intencionado: cada elemento visual tiene función narrativa y
             refuerza el concepto de marca.
           </p>
+
+          <h1>Conclusión</h1>
+
           <p>
-            El diseño puede considerarse sobresaliente, tanto por su composición
-            visual como por su uso controlado del movimiento. Cada elemento
-            parece pensado para reforzar la experiencia global, sin caer en el
-            exceso. Las proporciones, el ritmo de lectura y el balance entre
-            texto y espacio negativo evidencian una comprensión avanzada de los
-            principios de visual hierarchy y motion design.
-          </p>
-          <p>
-            Folllit sobresale precisamente por su creatividad visual e
-            interactiva. La fusión de efectos tridimensionales, transiciones
-            temporizadas y narrativa visual construye una experiencia que
-            trasciende la interfaz web convencional. No se limita a mostrar
-            proyectos, sino que invita a “sentir” el diseño. Se percibe dominio
-            técnico en la manipulación de espacio, tiempo y movimiento digital.
-            Las ideas implementadas son novedosas, coherentes y artísticamente
-            consistentes con la identidad que el autor propone.
-          </p>
-          <p>
-            El contenido es breve pero sustancioso y bien curado. No hay texto
-            innecesario ni saturación visual. El mensaje principal es claro:
-            presentar una visión personal del diseño visual contemporáneo. En
-            este sentido, el contenido no busca informar en profundidad sino
-            generar una impresión estética y conceptual. Es un ejemplo de
-            comunicación minimalista, donde cada fragmento visual sustituye
-            párrafos de texto.
-          </p>
-          <p>
-            En conclusión Folllit es un ejemplo sólido de cómo el diseño web
-            contemporáneo puede convertirse en pieza artística y narrativa
-            interactiva. Su valor reside en la integración de tecnología,
-            estética y emoción, logrando un equilibrio que explica su nominación
-            en Awwwards. Las fortalezas principales son su impacto visual,
-            ejecución técnica y creatividad en la interacción. Sus debilidades
-            se relacionan con la accesibilidad y el rendimiento, áreas en las
-            que podría mejorar sin perder su identidad visual. Como takeaway,
-            este sitio demuestra que el diseño experimental tiene la capacidad
-            de inspirar y redefinir los límites de la web, pero también recuerda
-            la importancia de combinar belleza con funcionalidad y
-            accesibilidad.
+            Folllit es un ejemplo sólido de cómo el diseño web contemporáneo
+            puede convertirse en pieza artística y narrativa interactiva. Su
+            valor reside en la integración de tecnología, estética y emoción,
+            logrando un equilibrio que explica su nominación en Awwwards. Las
+            fortalezas principales son su impacto visual, ejecución técnica y
+            creatividad en la interacción. Sus debilidades se relacionan con la
+            accesibilidad y el rendimiento, áreas en las que podría mejorar sin
+            perder su identidad visual. Como takeaway, este sitio demuestra que
+            el diseño experimental tiene la capacidad de inspirar y redefinir
+            los límites de la web, pero también recuerda la importancia de
+            combinar belleza con funcionalidad y accesibilidad.
           </p>
         </div>
 
@@ -234,11 +165,38 @@
         <h2>Webby Awards</h2>
         <iframe
           src="https://www.helloprzm.com/"
-          title="Sitio Webby Awards"
+          title="PRZM"
           width="100%"
           height="400"
           loading="lazy"
         ></iframe>
+
+        <div class="grid-galeria">
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.19.55.png?updatedAt=1761326633552"
+            alt="captura 1"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.22.29.png?updatedAt=1761326675880"
+            alt="captura 2"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.19.43.png?updatedAt=1761326654198"
+            alt="captura 3"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.20.49.png?updatedAt=1761326610213"
+            alt="captura 4"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.20.03.png?updatedAt=1761326755806"
+            alt="captura 5"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.21.53.png?updatedAt=1761326718311"
+            alt="captura 6"
+          />
+        </div>
         <div class="analysis-text">
           <p>
             PRZM representa un ejemplo contemporáneo de agencia digital enfocada
@@ -247,26 +205,6 @@
             públicamente como un sitio «premiado» formalmente en un concurso
             como Awwwards, es una web de perfil alto, con diseño visual fuerte,
             que vale la pena analizar con fines de referencia y aprendizaje.
-          </p>
-          <p>
-            Al llegar al sitio se produce una sensación de frescura, modernidad
-            y especialización: el diseño es limpio, con un enfoque visual
-            potente, y transmite que la marca está dirigida a audiencias
-            jóvenes, creativas, interesadas en cultura, música, tecnología y
-            moda. La carga visual es inmediata, el scroll invita a exploración,
-            y se percibe una mezcla de seriedad profesional + actitud joven.
-          </p>
-          <p>
-            La arquitectura de la información está organizada de forma sencilla
-            pero efectiva: inicio con hero fuerte que comunica quién es la
-            empresa (“Gen Z innovation consultancy”), seguido de secciones que
-            probablemente presentan sus servicios, sus comunidades, su enfoque
-            estratégico, casos o insights. El menú es minimalista o quizá
-            invisible/integrado, lo que favorece un recorrido más exploratorio
-            que un clic-menú tradicional. Esa estructura favorece una
-            experiencia de scroll continuo, lo que coincide con expectativas de
-            usuarios digitales acostumbrados a desplazamiento fluido en móviles
-            y pantallas amplias.
           </p>
           <p>
             Visualmente el sitio apuesta por un estilo contemporáneo: paleta
@@ -289,16 +227,6 @@
             rendimiento técnico.
           </p>
           <p>
-            La usabilidad es bastante buena para una audiencia digital joven y
-            habituada a navegar por experiencias modernas. El diseño minimalista
-            evita distracciones, y la navegación por scroll se adapta al uso
-            móvil. No obstante, para un usuario que busca información rápida
-            (“¿qué hacen?”, “¿cómo me contacto?”) puede no ser tan inmediato sin
-            menú visible o anclajes claros. En términos de accesibilidad, aunque
-            el diseño es atractivo, habría que verificar si se cumplen
-            estándares de contraste, soporte para teclado o lectores, etc.
-          </p>
-          <p>
             Desde el ámbito técnico, el sitio parece estar bien construido — la
             presencia de vídeo, animaciones e interactividad sugiere uso de
             frameworks modernos y buena performance visual. Pero estos elementos
@@ -319,28 +247,12 @@
             corporativos o de servicios técnicos muy complejos.
           </p>
           <p>
-            El diseño se puede considerar muy bueno, incluso sobresaliente desde
-            la perspectiva estética y de marca dirigidas a un público joven. La
-            composición visual, el espacio, la tipografía, la limpieza del
-            layout demuestran cuidado. Podría no alcanzar “sobresaliente
-            absoluto” si uno evalúa la usabilidad o accesibilidad máxima, pero
-            es claramente de alta calidad.
-          </p>
-          <p>
             La usabilidad es intuitiva para su audiencia target: scroll
             sencillo, navegación fluida, presentación atractiva. Donde puede
             mejorar es en facilitar atajos de navegación, reforzar enlaces de
             contacto o servicios de forma más explícita, ofrecer más cues de
             “dónde estoy” o “qué hago aquí” para usuarios menos habituados a
             experiencias de diseño libre.
-          </p>
-          <p>
-            La creatividad del sitio destaca: el enfoque, la ambientación, el
-            contenido visual, la interactividad combinan para generar una
-            impresión de marca innovadora. No es un sitio genérico, sino uno que
-            busca destacar por estilo y cultura. La implementación parece
-            fresca, alineada con la audiencia que pretende alcanzar, con ideas
-            que van más allá de lo convencional.
           </p>
           <p>
             El contenido es conciso, focalizado, con un mensaje claro
@@ -351,20 +263,22 @@
             masivos o explicar servicios detallados, quizás exigiría más
             profundidad.
           </p>
+
+          <h1>Conclusión</h1>
+
           <p>
-            En conclusión, la página de PRZM es un buen ejemplo de cómo una
-            marca dirigida a audiencias jóvenes puede construir una presencia
-            digital potente: visualmente atractiva, interactiva, con narrativa
-            clara y estilo coherente. Sus puntos fuertes son la ejecución de
-            diseño, la identidad de marca, la creatividad en interacción y la
-            claridad de propósito. Sus áreas de mejora o atención futura se
-            centran en rendimiento técnico, accesibilidad, navegación eficiente
-            para todos los usuarios y profundidad de servicios si el objetivo es
-            negocio amplio. Como takeaway: cuando se apunta a una audiencia
-            “cultura digital” es válido apostar por estilo e interacción, pero
-            mantener siempre la base técnica (velocidad, accesibilidad,
-            claridad) para que la experiencia sea efectiva real y no solo
-            estética.
+            La página de PRZM es un buen ejemplo de cómo una marca dirigida a
+            audiencias jóvenes puede construir una presencia digital potente:
+            visualmente atractiva, interactiva, con narrativa clara y estilo
+            coherente. Sus puntos fuertes son la ejecución de diseño, la
+            identidad de marca, la creatividad en interacción y la claridad de
+            propósito. Sus áreas de mejora o atención futura se centran en
+            rendimiento técnico, accesibilidad, navegación eficiente para todos
+            los usuarios y profundidad de servicios si el objetivo es negocio
+            amplio. Como takeaway: cuando se apunta a una audiencia “cultura
+            digital” es válido apostar por estilo e interacción, pero mantener
+            siempre la base técnica (velocidad, accesibilidad, claridad) para
+            que la experiencia sea efectiva real y no solo estética.
           </p>
         </div>
         <!-- Contenido de análisis del sitio Webby -->
@@ -373,33 +287,48 @@
         <h2>fwa</h2>
         <iframe
           src="https://untold.site/en"
-          title="Sitio fwa"
+          title="Untold"
           width="100%"
           height="400"
           loading="lazy"
         ></iframe>
+
+        <div class="grid-galeria">
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.35.20.png?updatedAt=1761327671735"
+            alt="captura 1"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.36.03.png?updatedAt=1761327653552"
+            alt="captura 2"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.36.15.png?updatedAt=1761327638263"
+            alt="captura 3"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.36.42.png?updatedAt=1761327614197"
+            alt="captura 4"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.36.27.png?updatedAt=1761327598160"
+            alt="captura 5"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.36.50.png?updatedAt=1761327580649"
+            alt="captura 6"
+          />
+        </div>
+
         <div class="analysis-text">
           <p>
-            He seleccionado este sitio porque es un ejemplo moderno de agencia /
-            ecosistema digital con presencia en Latinoamérica, que apuesta por
-            contar historias (“we tell untold stories”) y que ofrece un buen
-            caso de estudio para examinar diseño visual, interacción,
-            organización de información y narrativa digital. Aunque no parece
-            que no esté premiado formalmente, cumple criterios de alto nivel de
-            diseño y experiencia, lo que lo convierte en una buena elección para
-            análisis.
-          </p>
-          <p>
-            Al entrar al sitio se experimenta una sensación de minimalismo
-            sofisticado, con un tono profesional pero también creativo y
-            dinámico. El mensaje de cabecera (“we tell untold stories”) junto
-            con la presentación visual transmite que esta agencia se posiciona
-            como diferente, como disruptiva en su campo. La primera impresión es
-            de marca contemporánea, conectada con cultura, ideas, talento
-            global, lo cual genera interés inmediato. Existe una mezcla de
-            formalidad (estructura limpia, tipografía clara) y de energía
-            creativa (espacios amplios, animaciones sutiles, tono informal en el
-            copy).
+            Este sitio es un ejemplo moderno de agencia / ecosistema digital con
+            presencia en Latinoamérica, que apuesta por contar historias (“we
+            tell untold stories”) y que ofrece un buen caso de estudio para
+            examinar diseño visual, interacción, organización de información y
+            narrativa digital. Aunque no parece que no esté premiado
+            formalmente, cumple criterios de alto nivel de diseño y experiencia,
+            lo que lo convierte en una buena elección para análisis.
           </p>
           <p>
             La arquitectura de información está basada sobre todo en un
@@ -409,48 +338,166 @@
             Santiago, Lima…”) y luego posiblemente casos, servicios, cultura y
             contacto. El menú de navegación es minimalista (idioma, “ABOUT”,
             “WORK”, “ECOSYSTEM” etc.), lo que favorece una exploración más
-            libre. Esta estructura favorece que el visitante devore el contenido
-            de forma secuencial, lo que funciona si el objetivo es contar una
-            historia o presentar marca más que vender de forma inmediata.
+            libre.
           </p>
           <p>
             La paleta de colores parece apoyarse en tonos neutros / oscuros de
             fondo con tipografía clara, lo que da una sensación de elegancia y
-            tecnología. Los acentos visuales —fotografías de ciudades, iconos de
-            ubicaciones, gráficos de datos— aportan dinamismo sin sobrecargar.
-            La tipografía es moderna, sans serif, grande en encabezados y bien
-            espaciada en cuerpos de texto, lo que aporta jerarquía visual y
-            legibilidad. En cuanto al branding, la marca “untold|” se apoya
-            menos en un símbolo icónico y más en la
+            tecnología. La tipografía es moderna, sans serif, grande en
+            encabezados y bien espaciada en cuerpos de texto, lo que aporta
+            jerarquía visual y legibilidad.
           </p>
-          <p></p>
+          <p>
+            En cuanto a usabilidad, untold| ofrece una experiencia bastante
+            clara y profesional: textos bien legibles, navegación intuitiva,
+            jerarquía visible. En accesibilidad, aunque visualmente los
+            contrastes parecen adecuados, no hay evidencia explícita desde la
+            vista superficial del cumplimiento total de estándares WCAG (por
+            ejemplo navegación por teclado, descripciones alternativas
+            exhaustivas).
+          </p>
+          <p>
+            Técnicamente el sitio parece estar bien construido: estructura
+            limpia, imágenes e iconografías probablemente optimizadas,
+            navegación fluida. Pero los elementos de animación y visualización
+            tienen el potencial de afectar métricas de rendimiento como el
+            Largest Contentful Paint (LCP), el First Input Delay (FID) o el
+            Cumulative Layout Shift (CLS) si no están debidamente optimizados.
+            No cuento con un reporte de auditoría en este momento, pero a priori
+            el sitio parece balanceado entre diseño y rendimiento. Sería
+            recomendable aplicar técnicas de lazy loading, compresión de medios,
+            división de código (code splitting) para garantizar fluidez en
+            dispositivos y conexiones más lentas.
+          </p>
+
+          <h1>Conclusión</h1>
+
+          <p>
+            untold| representa una combinación sólida de diseño visual, branding
+            profesional, interactividad moderna y contenido alineado con su
+            público objetivo. Sus puntos fuertes incluyen su apariencia pulida,
+            narrativa coherente, diseño limpio, y experiencia de navegación
+            agradable. Las áreas de mejora se centran en usabilidad optimizada
+            para todos los perfiles de usuario (incluyendo accesibilidad y
+            navegación más rápida), así como evidencia de optimización técnica
+            para rendimiento en todos los dispositivos. Como takeaway, este
+            sitio muestra que una marca de servicios creativos puede comunicar
+            sofisticación, talento y alcance internacio­nal mediante un diseño
+            web bien ejecutado, pero debe seguir cuidando también los aspectos
+            “menos visibles” que garantizan accesibilidad, velocidad y
+            conversión para todos los usuarios.
+          </p>
         </div>
         <!-- Contenido de análisis del sitio fwa-->
       </section>
       <section id="site-cssda">
         <h2>cssda</h2>
         <iframe
-          src="https://generalcondition.com/ title="
+          src="https://generalcondition.com/"
+          title="General Condition Studio"
           width="100%"
           height="400"
           loading="lazy"
         ></iframe>
-        <p>
-          Se trata de un estudio de diseño que reivindica una metodología propia
-          —“brands, systems, and websites” con “clarity, color, and a touch of
-          chaos”. Además, está reconocido por plataformas especializadas como
-          Awwwards (mención honorable) lo que lo convierte en un buen caso de
-          estudio para examinar diseño, interactividad y narrativa digital.
-        </p>
-        <p>
-          Al acceder al sitio se percibe inmediatamente una estética atrevida
-          pero profesional, que mezcla tipografía de gran impacto, combinaciones
-          de color vibrantes y espacios con un cierto grado de “desorden
-          controlado”. La impresión es la de un estudio creativo que no solo
-          “hace páginas web”, sino que construye identidades con actitud. Esa
-          sensación de “art-meets-digital” se refuerza por el tono del lenguaje
-          (“weirdly serious design studio”) que aparece desde la página “About”.
-        </p>
+
+        <div class="grid-galeria">
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.47.37.png?updatedAt=1761328389727"
+            alt="captura 1"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.47.44.png?updatedAt=1761328357358"
+            alt="captura 2"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.51.00.png?updatedAt=1761328417990"
+            alt="captura 3"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.49.31.png?updatedAt=1761328434456"
+            alt="captura 4"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.48.33.png?updatedAt=1761328374084"
+            alt="captura 5"
+          />
+          <img
+            src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2019.48.07.png?updatedAt=1761328403637"
+            alt="captura 6"
+          />
+        </div>
+        <div class="analysis-text">
+          <p>
+            General Condition Studio se trata de un estudio de diseño que
+            reivindica una metodología propia “brands, systems, and websites”
+            con “clarity, color, and a touch of chaos”. Además, está reconocido
+            por plataformas especializadas como Awwwards (mención honorable) lo
+            que lo convierte en un buen caso de estudio para examinar diseño,
+            interactividad y narrativa digital.
+          </p>
+          <p>
+            Al acceder al sitio se percibe inmediatamente una estética atrevida
+            pero profesional, que mezcla tipografía de gran impacto,
+            combinaciones de color vibrantes y espacios con un cierto grado de
+            “desorden controlado”. La impresión es la de un estudio creativo que
+            no solo “hace páginas web”, sino que construye identidades con
+            actitud. Esa sensación de “art-meets-digital” se refuerza por el
+            tono del lenguaje (“weirdly serious design studio”) que aparece
+            desde la página “About”.
+          </p>
+          <p>
+            La arquitectura de información está organizada con una lógica que
+            favorece la exploración visual. El menú principal propone enlaces,
+            lo que indica que el sitio agrupa contenido en portafolio, identidad
+            del estudio, estado de ánimo/estilo, narrativa y contacto. La
+            navegación mezcla scroll vertical con bloques visuales grandes y
+            entradas tipo “hero”, lo que da prioridad a la experiencia más que a
+            la estructura estrictamente jerárquica.
+          </p>
+          <p>
+            La interacción en el sitio está claramente cuidada: el scroll activa
+            animaciones, ilustraciones que aparecen o se transforman, bloques de
+            contenido que se revelan con movimiento, microinteracciones al pasar
+            el cursor o al cambiar de sección. Estas animaciones y transiciones
+            proporcionan una sensación de fluidez y “alma” al sitio, lo que
+            mejora la percepción de calidad. Al mismo tiempo, esta complejidad
+            técnica exige una buena optimización para no penalizar la
+            experiencia.
+          </p>
+          <p>
+            En cuanto a usabilidad, el sitio funciona bien para su propósito:
+            exhibir creatividad, estilos, portafolio de estudio. La lectura es
+            clara, la navegación aceptable, el ritmo está bien manejado. No
+            obstante, para un usuario que busque información muy rápida puede
+            resultar menos inmediato, porque la experiencia se orienta más a la
+            inmersión visual que a la eficiencia.
+          </p>
+          <p>
+            Desde la perspectiva técnica, el sitio declara que colaboran con
+            Elementor para diseño web y desarrollo. Esto sugiere que utilizan
+            WordPress + Elementor como plataforma, pero personalizando de forma
+            intensiva (“no templates, no shortcuts”).
+          </p>
+
+          <h1>Conclusión</h1>
+
+          <p>
+            En conclusión, General Condition Studio representa un excelente
+            ejemplo de cómo un estudio creativo puede trasladar su marca,
+            identidad visual y competencias al medio web con coherencia,
+            carácter y calidad. Sus puntos fuertes residen en su diseño visual
+            sobresaliente, su narrativa de marca fuerte, la ejecución de
+            interacciones, y la coherencia estética general. Las áreas de mejora
+            se centran en usabilidad para audiencias más amplias (más accesos
+            directos, navegación más estructurada), en accesibilidad total y en
+            asegurar que el rendimiento técnico se mantenga óptimo en todos los
+            dispositivos y conexiones. Como takeaway, este sitio nos muestra que
+            para destacar en el ámbito creativo es importante combinar estética,
+            narrativa y técnica, pero también recordar que la inclusión, la
+            rapidez y la claridad siguen siendo piezas fundamentales para una
+            experiencia digital completa.
+          </p>
+        </div>
         <!-- Contenido de análisis del sitio cssda-->
       </section>
       <!-- Más secciones para FWA, CSS Design Awards, etc. -->
@@ -459,32 +506,68 @@
     <footer>
       <p>© 2025 Web Atelier (UDIT) – Informe de análisis.</p>
     </footer>
-  </body>
-  <script>
-    // seleccionar elementos
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.querySelector(".lightbox-img");
-    const cerrar = document.querySelector(".cerrar");
-    const imagenes = document.querySelectorAll(".grid-galeria img");
-
-    // al hacer clic en una imagen
-    imagenes.forEach((img) => {
-      img.addEventListener("click", () => {
-        lightbox.style.display = "block";
-        lightboxImg.src = img.src;
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      // Inicialización básica
+      const sr = ScrollReveal({
+        distance: "60px",
+        duration: 1000,
+        delay: 200,
+        easing: "ease-out",
+        reset: false, // cambia a true si quieres que se repita al hacer scroll hacia arriba
       });
-    });
 
-    // cerrar al hacer clic en la X
-    cerrar.addEventListener("click", () => {
-      lightbox.style.display = "none";
-    });
+      // Efectos por tipo de elemento
+      sr.reveal("h1, h2", { origin: "top" });
+      sr.reveal("p", { origin: "bottom", interval: 100 });
+      sr.reveal("img", { origin: "bottom", interval: 150, scale: 0.95 });
+      sr.reveal(".galeria", { origin: "right", delay: 300 });
+      sr.reveal("footer", { origin: "bottom", delay: 400 });
+    </script>
 
-    // cerrar al hacer clic fuera de la imagen
-    lightbox.addEventListener("click", (e) => {
-      if (e.target === lightbox) {
+    <script>
+      // Menú hamburguesa funcional
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+
+    <script>
+      // seleccionar elementos
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.querySelector(".lightbox-img");
+      const cerrar = document.querySelector(".cerrar");
+      const imagenes = document.querySelectorAll(".grid-galeria img");
+
+      // al hacer clic en una imagen
+      imagenes.forEach((img) => {
+        img.addEventListener("click", () => {
+          lightbox.style.display = "block";
+          lightboxImg.src = img.src;
+        });
+      });
+
+      // cerrar al hacer clic en la X
+      cerrar.addEventListener("click", () => {
         lightbox.style.display = "none";
-      }
-    });
-  </script>
+      });
+
+      // cerrar al hacer clic fuera de la imagen
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+          lightbox.style.display = "none";
+        }
+      });
+    </script>
+    <script>
+      document.querySelectorAll("h2").forEach((h2) => {
+        const text = h2.textContent.trim() + " ✦ ";
+        const repeated = text.repeat(12); // número de repeticiones
+        h2.innerHTML = `<span>${repeated}</span>`;
+      });
+    </script>
+  </body>
 </html>
