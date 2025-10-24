@@ -68,6 +68,35 @@
             entorno tridimensional. Produce una sensación de curiosidad,
             dinamismo y sorpresa, típica de los proyectos exhibidos en Awwwards.
           </p>
+
+          <div class="grid-galeria">
+            <img
+              src="https://ik.imagekit.io/alissonedith/Inicio?updatedAt=1761315067160"
+              alt="captura 1"
+            />
+            <img
+              src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2015.38.27.png?updatedAt=1761317089517"
+              alt="captura 2"
+            />
+            <img
+              src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2015.39.40.png?updatedAt=1761317068496"
+              alt="captura 3"
+            />
+            <img
+              src="https://ik.imagekit.io/alissonedith/Captura%20de%20pantalla%202025-10-24%20a%20las%2015.39.25.png?updatedAt=1761317032406"
+              alt="captura 4"
+            />
+          </div>
+          <!-- Lightbox (oculto al principio) -->
+          <div id="lightbox" class="lightbox">
+            <span class="cerrar">&times;</span>
+            <img
+              class="lightbox-img"
+              src="https://ik.imagekit.io/alissonedith/Inicio?updatedAt=1761315067160"
+              alt="Imagen ampliada"
+            />
+          </div>
+
           <p>
             La arquitectura de información es no convencional, centrada en el
             scroll como hilo narrativo. No existen menús visibles tradicionales:
@@ -431,4 +460,31 @@
       <p>© 2025 Web Atelier (UDIT) – Informe de análisis.</p>
     </footer>
   </body>
+  <script>
+    // seleccionar elementos
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.querySelector(".lightbox-img");
+    const cerrar = document.querySelector(".cerrar");
+    const imagenes = document.querySelectorAll(".grid-galeria img");
+
+    // al hacer clic en una imagen
+    imagenes.forEach((img) => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    // cerrar al hacer clic en la X
+    cerrar.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+
+    // cerrar al hacer clic fuera de la imagen
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
 </html>
